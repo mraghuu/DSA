@@ -1,0 +1,32 @@
+﻿1. Find Maximum in an Array
+Write a program to find the largest element in a given array of integers.
+
+2. Find Minimum in an Array
+Write a program to find the smallest element in a given array of integers.
+
+3. Sum of Array Elements
+Take an array of integers as input and calculate the sum of all elements.
+
+4. Reverse an Array
+Write a program to reverse the elements of an array without using built-in functions.
+
+5. Check Palindrome String
+Take a string input from the user and check if it is a palindrome (reads the same forwards and backwards).
+
+6. Count Vowels in a String
+Write a program that counts the number of vowels (a, e, i, o, u) in a user-provided string.
+
+7. Linear Search in an Array
+Ask the user for a number and check if it exists in the array using linear search. Return the index if found.
+
+8. Reverse a Number
+Take an integer input and reverse its digits.
+Example: 12345 → 54321
+
+9. Factorial of a Number
+Calculate the factorial of a given number using a for loop.
+Example: 5! = 5×4×3×2×1 = 120
+
+10. Fibonacci Series
+Print the first n numbers in the Fibonacci series.
+Example: 0, 1, 1, 2, 3, 5, 8, ...

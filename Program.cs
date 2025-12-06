@@ -3,13 +3,13 @@ using ConsoleApp2.Levels;
 
 public class MainClass
 {
-    LowT _low = new LowT();
-    MidT _mid = new MidT();
-    HigT _hig = new HigT();
+    readonly LowT _low = new LowT();
+    readonly MidT _mid = new MidT();
+    readonly HigT _hig = new HigT();
 
     public void Run()
     {
-        _low.MaxInArray();
+        _low.ReverseString();
     }
 
     public static void Main(string[] args)
