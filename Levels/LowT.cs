@@ -197,11 +197,71 @@ namespace ConsoleApp2.Levels
         {
             Console.WriteLine("Enter the string :");
             string str = Console.ReadLine();
+            string[] vowel = { "a", "e", "i", "o", "u" };
             int count = 0;
             for(int i =0;i < str.Length; i++)
             {
-                //if (str[i].ToString()) ;
+                if (vowel.Contains(str[i].ToString()))
+                {
+                    count++;
+                }
             }
+
+
+            Console.WriteLine("Number of vowels in given string : "+ count);
+        }
+
+        // 7. Linear Search in an Array ( Ask the user for a number and check if it exists in the array using linear search.Return the index if found.)
+
+        public void IndexOfElement()
+        {
+            int[] arr = { 2, 45, 67, 3, 8, 9, 0, 1 };
+            Console.WriteLine("Given array elements are : "+string.Join(",", arr));
+            string input = Console.ReadLine();
+            for(int i = 0; i < arr.Length; i++)
+            {
+                if(input.ToString() == arr[i].ToString())
+                {
+                    Console.WriteLine("Element is found and its index is " +i);
+                    break;
+                }
+            }
+        }
+
+        // 8. Reverse a Number Take an integer input and reverse its digits. Example: 12345 → 54321
+
+        public void ReverseNumber()
+        {
+            int num = 123456;
+            Console.WriteLine("Given number is " + num);
+            string str = num.ToString();
+            string output = "";
+            for(int i = str.Length -1; i >= 0; i--)
+            {
+                output += str[i].ToString();
+            }
+            Console.WriteLine("Reversed of given number is " + Convert.ToInt32(output));
+        }
+
+        // 9. Factorial of a Number Calculate the factorial of a given number using a for loop. (Example: 5! = 5×4×3×2×1 = 120)
+
+        public void NumberFactorial()
+        {
+            int num = 9;
+            Console.WriteLine("Given number is : " + num);
+            int res = 1;
+            for (int i = num;i > 0; i--)
+            {
+                res *= i;
+            }
+            Console.WriteLine("The factorial of given number is : " + res);
+        }
+
+        //10. Fibonacci Series  Print the first n numbers in the Fibonacci series.  Example: 0, 1, 1, 2, 3, 5, 8, ...
+
+        public void FibonacciN()
+        {
+
         }
     }
 }

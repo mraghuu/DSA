@@ -9,7 +9,7 @@ public class MainClass
 
     public void Run()
     {
-        _low.PalindromeString();
+        _low.NumberFactorial();
     }
 
     public static void Main(string[] args)
