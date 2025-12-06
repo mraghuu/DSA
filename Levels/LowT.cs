@@ -168,7 +168,28 @@ namespace ConsoleApp2.Levels
         
         public void PalindromeString()
         {
+            Console.WriteLine("Enter the string: ");
+            string str = Console.ReadLine();
+            int left = 0;
+            int right = str.Length - 1;
+            bool isPalindrome = true;
 
+            while (left < right)
+            {
+                if (str[left] != str[right])
+                {
+                    isPalindrome = false;
+                    break;
+                }
+
+                left++;
+                right--;
+            }
+
+            if (isPalindrome)
+                Console.WriteLine("The string is a palindrome.");
+            else
+                Console.WriteLine("The string is not a palindrome.");
         }
     }
 }

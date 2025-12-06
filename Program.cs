@@ -9,7 +9,7 @@ public class MainClass
 
     public void Run()
     {
-        _low.ReverseString();
+        _low.PalindromeString();
     }
 
     public static void Main(string[] args)
