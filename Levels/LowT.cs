@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -181,15 +182,26 @@ namespace ConsoleApp2.Levels
                     isPalindrome = false;
                     break;
                 }
-
-                left++;
-                right--;
+                left++;  right--;
             }
 
             if (isPalindrome)
                 Console.WriteLine("The string is a palindrome.");
             else
                 Console.WriteLine("The string is not a palindrome.");
+        }
+
+        // 6. Count Vowels in a String Write a program that counts the number of vowels(a, e, i, o, u) in a user-provided string.
+
+        public void VowelsInstring()
+        {
+            Console.WriteLine("Enter the string :");
+            string str = Console.ReadLine();
+            int count = 0;
+            for(int i =0;i < str.Length; i++)
+            {
+                //if (str[i].ToString()) ;
+            }
         }
     }
 }
