@@ -3,13 +3,16 @@ using ConsoleApp2.Levels;
 
 public class MainClass
 {
-    readonly LowT _low = new LowT();
-    readonly MidT _mid = new MidT();
-    readonly HigT _hig = new HigT();
+    private readonly LowT _low = new LowT();
+    private readonly MidT _mid = new MidT();
+    private readonly HigT _hig = new HigT();
+    private readonly StringArray _stringArray = new StringArray();
+
+    
 
     public void Run()
     {
-        _low.NumberFactorial();
+        _stringArray.SpaceString();
     }
 
     public static void Main(string[] args)
@@ -17,5 +20,4 @@ public class MainClass
         MainClass program = new MainClass();
         program.Run();
     }
-
 }

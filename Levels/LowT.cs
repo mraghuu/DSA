@@ -258,10 +258,20 @@ namespace ConsoleApp2.Levels
         }
 
         //10. Fibonacci Series  Print the first n numbers in the Fibonacci series.  Example: 0, 1, 1, 2, 3, 5, 8, ...
+        //F(0) = 0
+        //F(1) = 1
+        //F(n) = F(n-1) + F(n-2)
 
         public void FibonacciN()
         {
-
+            StringBuilder sb = new StringBuilder();
+            int n = int.Parse(Console.ReadLine());
+            sb.Append(0);
+            sb.Append(1);
+            for (int i = 1;i < n;i++) {
+                sb.Append((i-1) + (n-2));
+            }
+            Console.WriteLine(sb);
         }
     }
 }

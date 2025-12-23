@@ -1,0 +1,79 @@
+﻿🟢 Beginner DSA Questions (Strings)
+
+1. Reverse a string.
+
+2. Check if a string is a palindrome.
+
+3. Count vowels and consonants in a string.
+
+4. Find the length of a string without using .Length.
+
+5. Convert a string to uppercase without using built-in functions.
+
+6. Remove spaces from a string.
+
+7. Count occurrences of a character in a string.
+
+8. Check if two strings are equal without using ==.
+
+
+
+🟡 Intermediate DSA Questions (String Arrays)
+
+1. Find the largest string in a string array.
+
+2. Find the smallest string in a string array.
+
+3. Count strings starting with a vowel.
+
+4. Search for a given string in a string array.
+
+5. Remove duplicate strings from an array.
+
+6. Sort a string array lexicographically.
+
+7. Reverse each string in a string array.
+
+8. Find common strings between two string arrays.
+
+9. Merge two string arrays.
+
+10. Find the most frequent string in an array.
+
+
+
+🟠 Advanced DSA Questions (Algorithms on Strings)
+
+1. Check if two strings are anagrams.
+
+2. Find the first non-repeating character in a string.
+
+3. Find the longest common prefix in a string array.
+
+4. Group anagrams together.
+
+5. Check if one string is a rotation of another.
+
+6. Implement substring search (without using Contains).
+
+7. Find all palindromic substrings.
+
+8. Compress a string (e.g., aaabbc → a3b2c1).
+
+
+
+🔴 Expert / Interview-Level DSA Questions
+
+1. Implement Trie for storing strings.
+
+2. Pattern matching using KMP algorithm.
+
+3. Longest repeating substring.
+
+4. Minimum window substring.
+
+5. Check if string interleaving is possible.
+
+6. Find longest substring without repeating characters.
+
+7. Wildcard pattern matching (*, ?).
