@@ -12,7 +12,7 @@ public class MainClass
 
     public void Run()
     {
-        _stringArray.SpaceString();
+        _stringArray.CharCount();
     }
 
     public static void Main(string[] args)
@@ -20,4 +20,6 @@ public class MainClass
         MainClass program = new MainClass();
         program.Run();
     }
+
+
 }

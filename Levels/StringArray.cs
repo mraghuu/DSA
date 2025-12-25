@@ -158,8 +158,34 @@ namespace ConsoleApp2.Levels
 
         public void CharCount()
         {
+            int count = 0;
+            Console.WriteLine("type the string and hit enter");
+            string str = Console.ReadLine();
+            string jch = "";
+            for (int i = 0;i < str.Length; i++)
+            {
+                if (str.IndexOf(str[i]) != i)
+                    continue;
+                for (int j = 0; j < str.Length; j++)
+                {
+                    if (str[i] == str[j])
+                    {
+                        count++;
+                        jch = str[j].ToString();
+                    }
+                }
+                Console.WriteLine("index of Char " + str.IndexOf(str[i]) + " i = " + i + "");
 
-
+                Console.WriteLine("Char " + str[i] + " occured " + count + " Times");
+                
+                count = 0;
+                jch = "";
+            }
         }
+
+
+
+       
+
     }
 }
