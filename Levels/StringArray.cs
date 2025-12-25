@@ -7,6 +7,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ConsoleApp2.Levels
 {
@@ -14,7 +15,8 @@ namespace ConsoleApp2.Levels
     {
         public StringArray() { }
 
-        //Beginner DSA Questions(Strings)
+
+        #region Beginner DSA Questions(Strings)
         // 1. Reverse a string.
 
         public void RevString()
@@ -175,7 +177,6 @@ namespace ConsoleApp2.Levels
                     }
                 }
                 Console.WriteLine("index of Char " + str.IndexOf(str[i]) + " i = " + i + "");
-
                 Console.WriteLine("Char " + str[i] + " occured " + count + " Times");
                 
                 count = 0;
@@ -184,8 +185,59 @@ namespace ConsoleApp2.Levels
         }
 
 
+        // 8. Check if two strings are equal without using ==.
 
-       
+        public void StrEqual()
+        {
+            Console.WriteLine("type the 1st string and hit enter");
+            string str1 = Console.ReadLine();
+            Console.WriteLine("type the 2nd string and hit enter");
+            string str2 = Console.ReadLine();
+
+            if (str1.Equals(str2))
+            {
+                Console.WriteLine("Both string are equal");
+            }
+            else
+            {
+                Console.WriteLine("Both string aren't equal");
+
+            }
+        }
+
+        #endregion
+
+
+        #region 🟡 Intermediate DSA Questions (String Arrays)
+
+        //1. Find the largest string in a string array.
+
+        public void LargeString()
+        {
+            string[] str = { "arvind", "manish", "shrishti", "sudarshan", "raghunandan" };
+            string[] str2 = new string[str.Length];
+                
+        }
+
+        //2. Find the smallest string in a string array.
+
+        //3. Count strings starting with a vowel.
+
+        //4. Search for a given string in a string array.
+
+        //5. Remove duplicate strings from an array.
+
+        //6. Sort a string array lexicographically.
+
+        //7. Reverse each string in a string array.
+
+        //8. Find common strings between two string arrays.
+
+        //9. Merge two string arrays.
+
+        //10. Find the most frequent string in an array.
+
+        #endregion
 
     }
 }
