@@ -215,18 +215,113 @@ namespace ConsoleApp2.Levels
         public void LargeString()
         {
             string[] str = { "arvind", "manish", "shrishti", "sudarshan", "raghunandan" };
-            string[] str2 = new string[str.Length];
+            string str1 = "";
+            int[] str2 = new int[str.Length];
+            int len = 0;
+            int index = 0;
+
+            for (int i = 0; i < str.Length; i++)
+            {
+                if (str[i].Length > len)
+                {
+                    len = str[i].Length;
+                    index = i;
+                }
+                else
+                {
+                    continue;
+                }
+            }
+            Console.WriteLine(str[index] + " is the largest string element in array having length " + len);
                 
         }
 
         //2. Find the smallest string in a string array.
+        public void SmallString()
+        {
+            string[] str = { "arvind", "mnish", "shrishti", "sudarshan", "raghunandan" };
+            string str1 = "";
+            int[] str2 = new int[str.Length];
+            int len = str[0].Length;
+            int index = 0;
+
+            for (int i = 0; i < str.Length; i++)
+            {
+                if (str[i].Length < len)
+                {
+                    len = str[i].Length;
+                    index = i;
+                }
+                else
+                {
+                    continue;
+                }
+            }
+            Console.WriteLine(str[index] + " is the largest string element in array having length " + len);
+        }
+
 
         //3. Count strings starting with a vowel.
 
+        public void StartWithVow()
+        {
+            string[] str = { "arvind", "mnish", "shrishti", "sudarshan", "raghunandan", "Ohm", "ishant" };
+            string[] vowel = { "a","e","i","o","u" };
+            int count = 0;
+            string ch  = "";
+
+            for (int i = 0; i < str.Length; i++)
+            {
+                ch =(str[i]).ToLower();
+                if (ch.StartsWith('a') ||ch.StartsWith('e') ||ch.StartsWith('i') ||ch.StartsWith('o') ||ch.StartsWith('u') )
+                {
+                    count++;
+                }
+                else
+                {
+                    continue;
+                }
+            }
+            Console.WriteLine("count of string element in array starting with vowels is :" + count);
+        }
+
+
         //4. Search for a given string in a string array.
+
+        public void ArraySearch()
+        {
+            string[] str = { "arvind", "manish", "shrishti", "sudarshan", "raghunandan", "Ohm", "ishant" };
+            Console.WriteLine("Array string elements are :" + string.Join(", ",str));
+            Console.WriteLine("Type string to be found in array and its index in string: ");
+            string str1 = Console.ReadLine();
+            int index = 0;
+                if (str.Contains(str1))
+                {
+                    Console.WriteLine("string found in array at index :" + Array.IndexOf(str,str1));
+                }
+                else
+                {
+                    Console.WriteLine("string is not found in array");
+                }
+        }
 
         //5. Remove duplicate strings from an array.
 
+        public void ArraySearch2()
+        {
+            string[] str = { "arvind", "manish", "shrishti", "Ohm", "raghunandan", "Ohm", "ishant" };
+            Console.WriteLine("Array string elements are :" + string.Join(", ", str));
+            List<string> list = new List<string>();
+            foreach (string str2 in str)
+            {
+                if (list.Contains(str2))
+                {
+
+                }
+                else { list.Add(str2); }
+            }
+            Console.WriteLine("Array without any repitetive element " + string.Join(", ",list.ToArray()));
+        }
         //6. Sort a string array lexicographically.
 
         //7. Reverse each string in a string array.

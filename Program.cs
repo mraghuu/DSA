@@ -12,7 +12,7 @@ public class MainClass
 
     public void Run()
     {
-        _stringArray.StrEqual();
+        _stringArray.ArraySearch2();
     }
 
     public static void Main(string[] args)
