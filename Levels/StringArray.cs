@@ -322,9 +322,45 @@ namespace ConsoleApp2.Levels
             }
             Console.WriteLine("Array without any repitetive element " + string.Join(", ",list.ToArray()));
         }
-        //6. Sort a string array lexicographically.
+
+        //6. Sort a string array lexicographically.(alphabetically)
+        public void SortStrArray()
+        {
+            string[] str = { "banana", "apple", "cherry", "date" };
+            Console.WriteLine("Array string elements are :" + string.Join(", ", str));
+            for (int i = 0; i < str.Length - 1; i++)
+            {
+                for (int j = i + 1; j < str.Length; j++)
+                {
+                    if (string.Compare(str[i], str[j]) > 0)                                 // string.Compare(str[i], str[j])  compares two strings lexicographically.
+                    {                                                                       // It returns > 0 if str[i] comes after str[j] alphabetically
+                        string temp = str[i];                                               // It returns< 0 if str[i] comes before str[j]
+                        str[i] = str[j];                                                    // It returns 0 if both strings are equal
+                        str[j] = temp;
+                    }
+                }
+            }
+            Console.WriteLine("Sorted array is " + string.Join(", ", str));
+        }
+
 
         //7. Reverse each string in a string array.
+        public void ArrayStrReverse()
+        {
+            string[] str = { "arvind", "mnish", "shrishti", "sudarshan", "raghunandan", "Ohm", "ishant" };
+            
+            Console.WriteLine(string.Join(", ", str));
+            for(int i = 0;i < str.Length; i++)
+            {
+                string temp = "";
+                for (int j = str[i].Length -1; j >= 0; j--) {
+                    temp += str[i][j];
+                }
+                str[i] = temp;
+            }
+
+            Console.WriteLine("Reversed string array is: " + string.Join(", ", str));
+        }
 
         //8. Find common strings between two string arrays.
 
