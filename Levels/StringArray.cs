@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.Design;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
@@ -360,15 +361,107 @@ namespace ConsoleApp2.Levels
             }
 
             Console.WriteLine("Reversed string array is: " + string.Join(", ", str));
+            //Console.WriteLine(str[1^1]);        XOR
+            //Console.WriteLine(str[^1]);         
+
         }
 
         //8. Find common strings between two string arrays.
+        public void CommonStrArray()
+        {
+            string[] str = { "arvind", "mnish", "shrishti", "sudarshan", "raghunandan", "Ohm", "ishant" };
+            string[] str2 = { "arvind", "shanti", "shrishti", "xyz", "raghunandan", "shal", "ishant" };
+
+            Console.WriteLine(string.Join(", ", str));
+            Console.WriteLine(string.Join(", ", str2));
+            for (int i = 0; i < str.Length; i++)
+            {
+                if(str2.Contains(str[i]))
+                {
+                    Console.WriteLine("Common string found : " + str[i]);
+                }
+            }    
+        }
 
         //9. Merge two string arrays.
+        public void MergeStrArray()
+        {
+            string[] str = { "arvind", "mnish", "shrishti", "sudarshan", "raghunandan", "Ohm", "ishant" };
+            string[] str2 = { "arvind", "shanti", "shrishti", "xyz", "raghunandan", "shal", "ishant" };
+            string[] str3 = new string [str.Length+str2.Length];
+            int index= 0;
+
+            Console.WriteLine(string.Join(", ", str));
+            Console.WriteLine(string.Join(", ", str2));
+            for (int i = 0; i < str3.Length; i++)
+            {
+                if (i < str.Length)
+                {
+                    str3[i] = str[i];
+                }
+                else
+                {
+                    str3[i] = str2[index];
+                    index++;
+                }
+            }
+            Console.WriteLine("Merged array is : " + string.Join(", ", str3));
+        }
 
         //10. Find the most frequent string in an array.
 
-        #endregion
+        public void FreqStrArray()
+        {
+            string[] str = { "arvind", "mnish", "shrishti", "sudarshan", "raghunandan", "Ohm", "ishant" ,"arvind", "shanti", "shrishti", "xyz", "raghunandan", "shal", "ishant", "arvind" };
+            int max = 0;
+            int hold = 0;
+            string temp = "";
+
+            Console.WriteLine(string.Join(", ", str));
+            for (int i = 0; i < str.Length; i++)
+            {
+                temp = str[i];
+                for (int j = 0; j < str.Length; j++)
+                {
+                    if(str[j] == temp) { 
+                        max++;
+                    }
+                }
+                if (max > hold)
+                {
+                    hold = max;
+                    temp = str[i];
+                }
+            }
+            Console.WriteLine("Frequent string is : " + temp );
+        }
+        public void FreqStrArrayDict()
+        {
+            string[] str = { "arvind", "mnish", "shrishti", "sudarshan", "raghunandan", "Ohm", "ishant" ,"arvind", "shanti", "shrishti", "xyz", "raghunandan", "shal", "ishant", "arvind" };
+
+            Dictionary<string, int> freq = new Dictionary<string, int>();
+
+            foreach (string s in str)
+            {
+                if (freq.ContainsKey(s)) freq[s]++;
+                else freq[s] = 1;
+            }
+            string result = "";
+            int max = 0;
+            foreach (var item in freq)
+            {
+                if (item.Value > max)
+                {
+                    max = item.Value;
+                    result = item.Key;
+                }
+            }
+            Console.WriteLine($"{result} appears {max} times");
+        }
 
     }
+
+
+    #endregion
+
 }

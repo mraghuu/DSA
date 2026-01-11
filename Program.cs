@@ -12,7 +12,7 @@ public class MainClass
 
     public void Run()
     {
-        _stringArray.ArrayStrReverse();
+        _stringArray.FreqStrArrayDict();
     }
 
     public static void Main(string[] args)
