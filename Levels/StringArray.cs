@@ -7,6 +7,7 @@ using System.ComponentModel.Design;
 using System.Diagnostics;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
@@ -405,7 +406,15 @@ namespace ConsoleApp2.Levels
                     index++;
                 }
             }
+            
+            
+            var xyz = str.Concat(str2).Distinct().ToArray();
+
+
+            
             Console.WriteLine("Merged array is : " + string.Join(", ", str3));
+            Console.WriteLine("Merged array is : " + string.Join(", ", str.Concat(str2).Distinct().ToArray()));
+
         }
 
         //10. Find the most frequent string in an array.
@@ -458,10 +467,83 @@ namespace ConsoleApp2.Levels
             }
             Console.WriteLine($"{result} appears {max} times");
         }
+        #endregion
+
+
+        #region 🟠 Advanced DSA Questions(Algorithms on Strings)
+
+        //1. Check if two strings are anagrams.
+
+        public void AnagramStr()
+        {
+            Console.WriteLine("Enter the first string and hit enter");
+            string str1 = Console.ReadLine();
+            Console.WriteLine("Enter the Second string and hit enter");
+            string str2 = Console.ReadLine();
+            Console.WriteLine($"string 1 is : {str1} and string 2 is : {str2}");
+
+            if (str1.Length != str2.Length)
+            {
+                Console.WriteLine("Both given strings aren't anagrams");
+                return;
+            }
+
+            foreach (char ch in str1)
+            {
+                if (str2.Contains(ch))
+                {
+                    continue;
+                }
+                else
+                {
+                    Console.WriteLine("both given string aren't anagrams");
+                    return;
+                }
+            }
+            Console.WriteLine("both given string are anagrams");
+        }
+
+
+        //2. Find the first non-repeating character in a string.
+        public void FirstNonRepStr()
+        {
+            Console.WriteLine("Enter the first string and hit enter");
+            string str1 = Console.ReadLine();
+            Console.WriteLine($"string 1 is : {str1}");
+            Dictionary<char, int> freq = new Dictionary<char, int>(); // use Hashing to keep time complexity efficient
+
+            foreach (char ch in str1)
+            {
+                if (freq.ContainsKey(ch))
+                    freq[ch]++;
+                else
+                    freq[ch] = 1;
+            }
+
+            foreach(char ch in str1)
+            {
+                if (freq[ch] == 1)
+                {
+                    Console.WriteLine($"First non-repeating character: {ch}");
+                    return;
+                }
+            }
+        }
+
+        //3. Find the longest common prefix in a string arra333y.
+
+        //4. Group anagrams together.
+
+        //5. Check if one string is a rotation of another.
+
+        //6. Implement substring search (without using Contains).
+
+        //7. Find all palindromic substrings.
+
+        //8. Compress a string (e.g., aaabbc → a3b2c1).
+
+        #endregion
 
     }
-
-
-    #endregion
 
 }
