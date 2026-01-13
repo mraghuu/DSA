@@ -530,7 +530,29 @@ namespace ConsoleApp2.Levels
             }
         }
 
-        //3. Find the longest common prefix in a string arra333y.
+        //3. Find the longest common prefix in a string array.
+        public void LongestPrefixStr()
+        {
+            string[] str = {"rama", "ram", "ramayana",  };
+            Console.WriteLine("Array elements are : " + string.Join(", ",str));
+
+            string first = str[0];
+
+            for(int i = 0;i < str.Length; i++)
+            {
+                char ch = first[i];
+                for(int j =0; j < str.Length; j++)
+                {
+                    if(i >= str[j].Length ||  str[j][i] != ch)
+                    {
+                        Console.WriteLine(first.Substring(0,i));
+                        return;
+                    }
+                }
+            }
+            Console.WriteLine(first);
+        }
+
 
         //4. Group anagrams together.
 

@@ -12,7 +12,7 @@ public class MainClass
 
     public void Run()
     {
-        _stringArray.FirstNonRepStr();
+        _stringArray.LongestPrefixStr();
     }
 
     public static void Main(string[] args)
