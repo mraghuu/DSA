@@ -566,6 +566,45 @@ namespace ConsoleApp2.Levels
 
         #endregion
 
+
+
+
+        public void test()
+        {
+            string str = "raghunandan kumar singh";
+            Dictionary<char, int> freq = new Dictionary<char, int>();
+
+            foreach(char ch in str)
+            {
+                if (freq.ContainsKey(ch)) freq[ch]++;
+                else freq[ch] = 1;
+            }
+
+            foreach(var item in freq)
+            {
+                Console.WriteLine($"char {item.Key} repetes {item.Value} times");
+            }
+        }
+
+
+
+
+        public void TestX()
+        {
+            string str = "my name is raghunandan kumar singh";
+            Dictionary<Char, int> dic = new Dictionary<char, int>();
+            foreach (Char ch in str)
+            {
+                if (dic.ContainsKey(ch)) dic[ch]++;
+                else dic[ch] = 1;
+            }
+            foreach (var item in dic)
+            {
+                Console.WriteLine($"char {item.Key} repeting {item.Value} times");
+                
+            }
+        }
+
     }
 
 }

@@ -12,7 +12,7 @@ public class MainClass
 
     public void Run()
     {
-        _stringArray.LongestPrefixStr();
+        _stringArray.TestX();
     }
 
     public static void Main(string[] args)
