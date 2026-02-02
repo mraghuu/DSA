@@ -1,0 +1,157 @@
+﻿1️⃣ HASHING
+🟢 Beginner
+
+1. Contains Duplicate
+
+2. Two Sum
+
+3. Count frequency of elements in an array
+
+4. Check if a string is an anagram of another
+
+5.  first repeating number in an array
+
+
+
+
+🟡 Intermediate
+
+1. First non-repeating character in a string
+
+2. Intersection of two arrays
+
+3. Find all duplicates in an array
+
+4. Group words that are anagrams
+
+5. Subarray sum equals K (basic version)
+
+
+
+
+🟠 Advanced
+
+1. Longest substring without repeating characters
+
+2. Top K frequent elements in an array
+
+3. Count number of subarrays with given XOR or sum
+
+4. Find longest consecutive sequence in unsorted array
+
+5. Check if a string can be rearranged to form a palindrome
+
+🔴 Expert / Interview
+
+1. Subarray with sum divisible by K
+
+2. Longest substring with at most K distinct characters
+
+3. Two arrays – find all pairs with sum = target
+
+4. Check if ransom note can be constructed from magazine letters
+
+5. Minimum window substring containing all characters of another string
+
+
+
+
+
+2️⃣ STACK
+🟢 Beginner
+
+Valid Parentheses (()[]{})
+
+Reverse a string using stack
+
+Implement basic Stack using array
+
+🟡 Intermediate
+
+Remove All Adjacent Duplicates in String
+
+Next Greater Element I
+
+Evaluate postfix expression
+
+🟠 Advanced
+
+Min Stack (support push/pop/getMin in O(1))
+
+Daily Temperatures
+
+Largest Rectangle in Histogram (monotonic stack)
+
+🔴 Expert / Interview
+
+Trapping Rain Water
+
+Next Greater Element II (circular array)
+
+Longest Valid Parentheses
+
+3️⃣ QUEUE
+🟢 Beginner
+
+Implement Queue using Array or built-in Queue
+
+Enqueue, Dequeue, Peek operations
+
+Recent Calls / Hit Counter (basic queue use)
+
+🟡 Intermediate
+
+Sliding Window Maximum (fixed-size window)
+
+Maximum Sum Subarray of Size K
+
+First Negative Number in Every Window
+
+🟠 Advanced
+
+Sliding Window with Variable Size
+
+Moving Average from Data Stream
+
+Rotten Oranges / BFS level order in 2D grid
+
+🔴 Expert / Interview
+
+Design Circular Queue
+
+LRU Cache (Queue + HashMap)
+
+Serialize / Deserialize Queue-like structures
+
+4️⃣ BINARY SEARCH
+🟢 Beginner
+
+Binary Search in sorted array
+
+Search Insert Position
+
+Find element in sorted array
+
+🟡 Intermediate
+
+First and Last Position of Element
+
+Find Peak Element
+
+Ceiling / Floor in sorted array
+
+🟠 Advanced
+
+Search in Rotated Sorted Array
+
+Square Root of X using Binary Search
+
+Minimum in Rotated Sorted Array
+
+🔴 Expert / Interview
+
+Median of Two Sorted Arrays
+
+Kth Smallest Element in Sorted Matrix
+
+Allocate Minimum Pages / Painters Partition Problem (Binary Search + Condition check)
